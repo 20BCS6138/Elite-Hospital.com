@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/datepicker.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="inner-layer">
+    <div class="container">
+      <div class="row no-margin">
+        <div class="col-sm-7">
+          <div class="content">
+            <h1>Book You Slot Now and Save your time</h1>
+            <p style="text-align: left;"> Largest & finest network of the world’s finest and brightest medical experts
+              who provide compassionate care using outstanding expertise and advanced technology</p>
+            <p style="text-align: left;"> from 3000 slice CT scan machine , colour MRI, portable X-RAY , on spot blood
+              test result and much more advanced healthcare facilities available with us here at ELITE hospital.</p>
+            <h4>For Help Call : +91 93067-84487</h4>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-data">
+            <div class="form-head">
+              <h2>Book an Appointemnt</h2>
+            </div>
+            <form action="appointment.php" method="POST">
+              <div class="form-body">
+                <div class="row form-row">
+                  <input type="text" placeholder="Enter Full name" class="form-control" name="fullname">
+                </div>
+                <div class="row form-row">
+                  <input type="number" placeholder="Enter Mobile Number" class="form-control" name="mobile">
+                </div>
+                <div class="row form-row">
+                  <input type="text" placeholder="Enter Email Adreess" class="form-control" name="email">
+                </div>
+                <div class="row form-row">
+                  <input id="dat" type="text" placeholder="Appointment Date" class="form-control" name="date1">
+                </div>
+
+                <h6>Address Details</h6>
+
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter Area" class="form-control" name="area">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter City" class="form-control" name="city">
+                  </div>
+                </div>
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter State" class="form-control" name="state">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Postal Code" class="form-control" name="postal">
+                  </div>
+                </div>
+                <div class="row form-row">
+                  <button class="btn btn-success btn-appointment">
+                     Book Appointment
+                  </button>
+
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#dat").datepicker();
+  })
+</script>
+
+</body>
+
+</html>
